@@ -1,0 +1,11 @@
+{   
+    //onde vai ser gerado o nosso codigo javascript
+    "compilerOptions": {
+        "outDir": "./dist",
+        "module": "commonjs",
+        //em qual versão quer que gere o javascript
+        "target": "es2019",
+        "esModuleInterop": true,
+        "allowJs": true
+    }
+}
