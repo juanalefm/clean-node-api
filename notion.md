@@ -23,3 +23,8 @@ lint-staged
     -> permite rodar scripts somente em arquivos que foram alterados (staged area), bom para usar em conjunto com o husky
 .lintstagedrc.json
     -> arquivo de configuração do lint-staged
+
+jest
+    -> biblioteca para testes unitarios
+    -> npm i -D jest @types/jest ts-jest
+    -> yarn jest --init
