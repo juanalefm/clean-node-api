@@ -28,3 +28,8 @@ jest
     -> biblioteca para testes unitarios
     -> npm i -D jest @types/jest ts-jest
     -> yarn jest --init
+
+/************************************************/
+
+1 -> sempre comece pelo test;
+    ex: signup controller deverá ver primeiro se os paremetros estão corretos e dentro do padrão; 
