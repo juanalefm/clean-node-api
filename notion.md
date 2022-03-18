@@ -19,6 +19,9 @@ husky
 .huskyrc.json
     -> arquivo de configuração do husky
 
+➜ npx husky add .husky/pre-push "npx lint-staged"
+
+
 lint-staged
     -> permite rodar scripts somente em arquivos que foram alterados (staged area), bom para usar em conjunto com o husky
 .lintstagedrc.json
