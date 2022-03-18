@@ -12,3 +12,8 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 coverage
+coverage/clover.xml
+coverage/clover.xml
+coverage/coverage-final.json
+coverage/lcov-report/index.html
+coverage/lcov.info

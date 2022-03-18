@@ -1,47 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1647565850935" clover="3.2.0">
-  <project timestamp="1647565850936" name="All files">
-    <metrics statements="30" coveredstatements="30" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2" elements="35" coveredelements="35" complexity="0" loc="30" ncloc="30" packages="2" files="2" classes="2"/>
+<coverage generated="1647566619281" clover="3.2.0">
+  <project timestamp="1647566619281" name="All files">
+    <metrics statements="22" coveredstatements="22" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2" elements="27" coveredelements="27" complexity="0" loc="22" ncloc="22" packages="2" files="2" classes="2"/>
     <package name="controllers">
-      <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="signup.ts" path="/Users/juanalef/Documents/Cursos/nodejs-rmanguinho/clean-node-api/src/presentation/controllers/signup.ts">
-        <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="erros">
-      <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="missing-param-error.ts" path="/Users/juanalef/Documents/Cursos/nodejs-rmanguinho/clean-node-api/src/presentation/erros/missing-param-error.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+    <package name="helpers">
+      <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="http-helpers.ts" path="/Users/juanalef/Documents/Cursos/nodejs-rmanguinho/clean-node-api/src/presentation/helpers/http-helpers.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
       </file>
     </package>
   </project>
