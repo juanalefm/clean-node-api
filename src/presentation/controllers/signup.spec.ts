@@ -1,6 +1,6 @@
 import { SignUpController } from './signup'
 
-// Se o cliente nao enviar o nome temos que retornar um erro 
+// Se o cliente nao enviar o nome temos que retornar um erro
 describe('SignUp Controller', () => {
   test('Should return 400 if no name is provided', () => {
     const sut = new SignUpController()
