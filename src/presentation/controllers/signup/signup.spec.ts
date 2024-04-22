@@ -156,7 +156,7 @@ describe('SignUpController', () => {
 
 // Verificando se o email eh realmente o email que veio no httprequest
 describe('SignUpController', () => {
-  test('Should call EmailValidator with correct email', () => {
+  test('Should return 500 if EmailValidator with correct email', () => {
     const { sut, emailValidatorStub } = makeSut()
     const isValidSpy = jest.spyOn(emailValidatorStub, 'isValid')
     const httpRequest = {
@@ -174,7 +174,7 @@ describe('SignUpController', () => {
 
 // Se o servidor der erro retorna serverError
 describe('SignUpController', () => {
-  test('Should return 500 if an ivalid email is provided', () => {
+  test('Should return 500 if EmailValidator throws', () => {
     const { sut, emailValidatorStub } = makeSut()
     jest.spyOn(emailValidatorStub, 'isValid').mockImplementation(() => {
       throw new Error()
@@ -211,5 +211,26 @@ describe('SignUpController', () => {
       email: 'any_email@mail.com',
       password: 'any_password'
     })
+  })
+})
+
+// Se o servidor der erro retorna serverError
+describe('SignUpController', () => {
+  test('Should return 500 if AddAccount throws', () => {
+    const { sut, addAccountStub } = makeSut()
+    jest.spyOn(addAccountStub, 'add').mockImplementation(() => {
+      throw new Error()
+    })
+    const httpRequest = {
+      body: {
+        name: 'any_name',
+        email: 'any_email@mail.com',
+        password: 'any_password',
+        passwordConfirmation: 'any_password'
+      }
+    }
+    const httpResponse = sut.handle(httpRequest)
+    expect(httpResponse.statusCode).toBe(500)
+    expect(httpResponse.body).toEqual(new ServerError())
   })
 })
