@@ -6,8 +6,6 @@ import {
   type AccountModel,
   type AddAccountModel
 } from './signup-protocols'
-import { resolve } from 'path'
-import { rejects } from 'assert'
 
 interface SutTypes {
   sut: SignUpController
